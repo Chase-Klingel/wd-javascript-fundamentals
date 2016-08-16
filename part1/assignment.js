@@ -241,12 +241,7 @@ function isOdd(integer) {
 
 function isVowel(letter) {
   var vowels = 'aeiou';
-  for (var i = 0; i < vowels.length; i++) {
-    if (letter === vowels[i]) {
-      return true;
-    }
-  }
-  return false;
+  return (vowels.indexOf(letter) !== -1);
 }
 
 // Define a function named largestOfThree which takes three arguments
