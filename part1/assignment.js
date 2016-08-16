@@ -171,11 +171,7 @@ function percentage(numerator, denominator) {
 // See https://dorey.github.io/JavaScript-Equality-Table/
 
 function isStrictlyEqual(value1, value2) {
-  if (value1 === value2) {
-    return true;
-  } else {
-    return false;
-  }
+  return value1 === value2;
 }
 
 // Define a function named isLooselyEqual that takes two arguments
@@ -190,11 +186,7 @@ function isStrictlyEqual(value1, value2) {
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Loose_equality_using
 
 function isLooselyEqual(value1, value2) {
-  if (value1 == value2) {
-    return true;
-  } else {
-    return false;
-  }
+  return value1 == value2;
 }
 
 
@@ -222,11 +214,7 @@ function remainder(numerator, denominator) {
 // Hint: What number will give you a remainder of 0 if the argument is even?
 
 function isEven(integer) {
-  if (integer % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return integer % 2 === 0
 }
 
 // Define a function named isOdd that takes one argument
@@ -238,11 +226,7 @@ function isEven(integer) {
 //    Return false
 
 function isOdd(integer) {
-  if (integer % 2 === 1) {
-    return true;
-  } else {
-    return false;
-  }
+  return integer % 2 === 1;
 }
 
 // Define a function named isVowel that takes one argument
@@ -463,8 +447,6 @@ function superPicky(value) {
 //    Return the correct tax rate as a string using the table from http://www.efile.com/tax-service/tax-calculator/tax-brackets/
 
 /*
-
-
 */
 function calculateTaxRate(salary, status) {
   if (status !== 'single' && status !== 'joint') {
