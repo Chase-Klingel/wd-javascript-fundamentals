@@ -191,6 +191,15 @@ function median(arr) {
 //
 // Return true if that string exists in the array, otherwise false.
 
+/******* BETTER SOLUTION *******/
+/*
+
+function contains(arr, str) {
+  return arr.includes(str);
+}
+
+*/
+
 function contains(arr, str) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === str) {
