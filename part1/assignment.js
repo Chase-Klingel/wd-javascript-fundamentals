@@ -278,7 +278,6 @@ function longestOfThree(value1, value2, value3) {
       longestWord = valueArr[i];
     }
   }
-
   return longestWord;
 }
 
